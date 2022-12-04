@@ -31,6 +31,7 @@ deploy-images:
         for TAG in $TAGS; do
           echo "Tagging and pushing image \"$CNAME\" with \"$TAG\""
           docker tag $REGISTRY/$CNAME:_build $REGISTRY/$CNAME:$TAG
-          docker push $REGISTRY/$CNAME:$TAG
+          for i in {1..3}; do
+             docker push $REGISTRY/$CNAME:$TAG || true
+          done
         done
-
