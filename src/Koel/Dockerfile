@@ -1,6 +1,6 @@
 FROM php:8.1.13-apache-bullseye
 
-ARG KOEL_VERSION=v6.8.5
+ARG KOEL_VERSION=v6.9.0
 
 # Install NodeJS, Yarn
 RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y \
