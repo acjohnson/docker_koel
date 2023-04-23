@@ -1,6 +1,6 @@
-FROM php:8.1.13-apache-bullseye
+FROM php:8.1.18-apache-bullseye
 
-ARG KOEL_VERSION=v6.11.0
+ARG KOEL_VERSION=v6.11.2
 
 # Install NodeJS, Yarn
 RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y \
@@ -18,7 +18,7 @@ RUN curl -sS https://getcomposer.org/installer \
     | php -- \
           --install-dir=/usr/local/bin \
           --filename=composer \
-          --version=2.4.4 && \
+          --version=2.5.5 && \
 	chmod +x /usr/local/bin/composer && \
 	composer --version
 
