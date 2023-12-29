@@ -1,4 +1,4 @@
-Docker image for [koel](https://github.com/phanan/koel) **v6.11.3**
+Docker image for [koel](https://github.com/phanan/koel) **v6.11.5**
  
 # Introduction
 Koel is a web-based open source personal audio streaming service.
